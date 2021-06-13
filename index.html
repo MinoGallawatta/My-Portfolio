@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" class="style">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <title>Minoooo</title>
+</head>
+
+<body>
+  <div class="container">
+  <header>
+    <h1 class="logo active">Mino Gallawatta</h1>
+     <input type="checkbox" id="nav-toggle" class="nav-toggle">
+  <hr class="sideline">
+  <hr class="sideline2">
+      <nav>
+          <ul>
+              <li><a href="#home"  >Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#portfolio">portfolio</a></li>
+              <li><a href="#contact">contact</a></li>
+          </ul>
+      </nav>
+      <label for="nav-toggle" class="nav-toggle-label"><span> 
+    </span></label>
+  </header>
+
+  <section id="home"> 
+    <div class="intro-container">
+      <div class="intro-text">
+        <h2>
+          <span class="hello">hello!</span>
+          I'm mino gallawatta,
+          a visual designer
+          specializing in  UI/UX.</h2>
+      </div>
+    </div>
+   
+      <div class="face-container ">
+        <div class="face">
+          <img src="FaceBack.png" alt="" class="faceback">
+          <div class="eyes">
+            <div class="eye"></div>
+            <div class="eye"></div>
+          </div>
+        </div>
+        <div class="bodyarea"> </div>
+      </div>
+    
+  </section>
+
+  <section id="about"  >
+    <div class="section-container">
+      <div class="split">
+        <div class="splitleft">
+          <h1 class="subheading">about me?</h1>
+          <p class="smalltext">
+           I'm a city boy born in the heart of colombo, who always loved the idea of creating something that looks pleasing to look at. I grew up to adore what is around me and to get inspiration from it! I started designing when I was 15 years old and haven't stopped since!
+          </p>
+        </div>
+        <div class="splitright"> 
+          <p class="bigtext">I like acoustic guitar and fighting games </p>
+          
+      </div>     
+      </div>
+    </div>
+  </section>
+
+
+  <section id="portfolio">
+    <div class="portfolio-container">
+      <h1>bleh bleh sdad</h1>
+    </div>
+
+
+  </section>
+  <section id="contact">
+    <div class="section-container">
+      <div class="contactinfo">
+        <h1 class="subheading">Call me maybe</h1>
+        <ul class="contacts--basic">
+          <li>For Needs : +94776618823</li>
+          <li>For Wants : minomaheesha@gmail.com</li>
+        </ul>
+      </div> 
+    </div>
+    <div class="socials">
+      <ul>
+        <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+        <li><a href=""><i class="fab fa-instagram-square"></i></a></li>
+        <li><a href=""><i class="fab fa-twitter-square"></i></a></li>
+        <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+        <li><a href=""><i class="fab fa-behance-square"></i></li>
+      </ul>
+    </div>
+  </section>
+</div>
+
+
+  <script> 
+    document.querySelector('body')
+    .addEventListener('mousemove',eyeball);
+    function eyeball(){
+      var eye = document.querySelectorAll('.eye');
+      eye.forEach(function(eye){
+        let x = (eye.getBoundingClientRect().left) + (eye.clientWidth / 2);
+        let y = (eye.getBoundingClientRect().top) + (eye.clientHeight / 2);
+        let radian = Math.atan2(event.pageX - x, event.pageY - y);
+        let rot = (radian * (180 / Math.PI) * -1) +270; 
+        eye.style.transform = "rotate("+ rot +"deg)"
+    
+      })
+    }
+    </script>
+</body>
+</html>
