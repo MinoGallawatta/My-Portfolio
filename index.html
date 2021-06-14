@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" class="style">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <title>Minoooo</title>
@@ -13,60 +14,68 @@
 
 <body>
   <div class="container">
-  <header>
-    <h1 class="logo active">Mino Gallawatta</h1>
-     <input type="checkbox" id="nav-toggle" class="nav-toggle">
-  <hr class="sideline">
-  <hr class="sideline2">
-      <nav>
-          <ul>
-              <li><a href="#home"  >Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#portfolio">portfolio</a></li>
-              <li><a href="#contact">contact</a></li>
-          </ul>
-      </nav>
-      <label for="nav-toggle" class="nav-toggle-label"><span> 
-    </span></label>
-  </header>
-
-  <section id="home"> 
-    <div class="intro-container">
-      <div class="intro-text">
-        <h2>
-          <span class="hello">hello!</span>
-          I'm mino gallawatta,
-          a visual designer
-          specializing in  UI/UX.</h2>
-      </div>
-    </div>
-   
-      <div class="face-container ">
-        <div class="face">
-          <img src="FaceBack.png" alt="" class="faceback">
-          <div class="eyes">
-            <div class="eye"></div>
-            <div class="eye"></div>
-          </div>
+  
+    
+      <header>
+      <h1 class="logo active">Mino Gallawatta</h1>
+       <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <hr class="sideline">
+        <hr class="sideline2">
+       
+        <nav>
+            <ul>
+                <li><a href="#home"  >Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">portfolio</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label"><span>
+      </span></label>
+        </header>
+      
+        <section id="home" >
+      <div class="intro-container">
+        <div class="intro-text">
+          <h2>
+            <span class="hello">hello!</span>
+            I'm <span class="bold">Mino Gallawatta</span>,<br>
+            a visual designer
+            specializing in   UI/UX. </h2>
         </div>
-        <div class="bodyarea"> </div>
       </div>
+        <div class="face-container ">
+          <div class="face">
+            <img src="FaceBack.png" alt="" class="faceback">
+            <div class="eyes">
+              <div class="eye"></div>
+              <div class="eye"></div>
+            </div>
+          </div>
+          <div class="bodyarea"> </div>
+         
+    </div>
     
   </section>
 
   <section id="about"  >
     <div class="section-container">
       <div class="split">
+        
         <div class="splitleft">
           <h1 class="subheading">about me?</h1>
-          <p class="smalltext">
-           I'm a city boy born in the heart of colombo, who always loved the idea of creating something that looks pleasing to look at. I grew up to adore what is around me and to get inspiration from it! I started designing when I was 15 years old and haven't stopped since!
-          </p>
+          <p class="smalltext">I'm a simple dude who likes to be bold with <span class="bold">colors</span>, <span class="bold">simple animations</span> and as you can see, <span class="bold"> cartoons!</span></p>
+
         </div>
         <div class="splitright"> 
-          <p class="bigtext">I like acoustic guitar and fighting games </p>
-          
+          <p class="bigtext">I like acoustic guitar and fighting games </p>     
       </div>     
+      </div>
+    </div>
+ <div class="about-img-container">
+      <div id="scene">
+        <div data-depth="0.2" class="guitar"><img src="guitar.png" alt=""></div>
+        <div data-depth="0.2" class="controller"><img src="controller.png" alt=""></div>
       </div>
     </div>
   </section>
@@ -74,7 +83,7 @@
 
   <section id="portfolio">
     <div class="portfolio-container">
-      <h1>bleh bleh sdad</h1>
+      <h1 class="subheading">relax I'm still making this part</h1>
     </div>
 
 
@@ -82,22 +91,23 @@
   <section id="contact">
     <div class="section-container">
       <div class="contactinfo">
-        <h1 class="subheading">Call me maybe</h1>
+        <h1 class="subheading">call me maybe</h1>
         <ul class="contacts--basic">
-          <li>For Needs : +94776618823</li>
-          <li>For Wants : minomaheesha@gmail.com</li>
+          <li>for needs : +94776618823</li>
+          <li>for wants : minomaheesha@gmail.com</li>
         </ul>
+        <div class="socials">
+          <ul>
+            <li><a href="https://www.facebook.com/mino.maheesha" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+            <li><a href="https://www.instagram.com/minogallawatta/" target="_blank"><i class="fab fa-instagram-square"></i></a></li>
+            <li><a href="https://twitter.com/gallawatta" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/mino-gallawatta/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://www.behance.net/minogallawatta" target="_blank"><i class="fab fa-behance-square"></i></li>
+          </ul>
+        </div>
       </div> 
     </div>
-    <div class="socials">
-      <ul>
-        <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
-        <li><a href=""><i class="fab fa-instagram-square"></i></a></li>
-        <li><a href=""><i class="fab fa-twitter-square"></i></a></li>
-        <li><a href=""><i class="fab fa-linkedin"></i></a></li>
-        <li><a href=""><i class="fab fa-behance-square"></i></li>
-      </ul>
-    </div>
+    
   </section>
 </div>
 
@@ -117,5 +127,10 @@
       })
     }
     </script>
+    <script>
+    var scene = document.getElementById('scene');
+    var parallaxInstance = new Parallax(scene);
+</script>
+
 </body>
 </html>
